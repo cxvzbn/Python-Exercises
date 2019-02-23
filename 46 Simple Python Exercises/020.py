@@ -11,21 +11,18 @@ def translate(english_words):
         "and": "och",
         "happy": "gott",
         "new": "nytt",
-        "year": "år"
+        "year": "ar"
     }
 
-
-"""    for word in english_words.split():
-        for n, translation in enumerate(swedish_to_english):
-            if word == translation[0]:
-                translated += translation[1] + " "
-                break
-            elif n == len(swedish_to_english) - 1:
-                translated += word + " """
-
+    translation = ""
     for word in english_words.split():
         if word in dictionary:
-            
+            translation += dictionary[word]
+        else:
+            translation += word
+        translation += " "
+    return translation
+
 
 
 if __name__ == "__main__":

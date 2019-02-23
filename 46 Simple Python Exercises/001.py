@@ -11,6 +11,4 @@ def max(n, m):
 
 
 if __name__ == '__main__':
-    n = input("first number: \n")
-    m = input("second number: \n")
-    print("Highest number is: " + max(n, m))
+    print("Highest number from 2 and 7 is: " + str(max(2, 7)))

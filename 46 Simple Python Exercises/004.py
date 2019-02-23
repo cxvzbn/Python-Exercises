@@ -8,8 +8,11 @@ def vowel(user_input):
     vowels = ["a", "e", "i", "u", "o"]
     for character in vowels:
         if user_input in (character, character.upper()):
-            return "It is a vowel"
-    return "Its not a vowel"
+            return " is a vowel"
+    return " is not a vowel"
 
 if __name__ == '__main__':
-    print(vowel(input(msg1)))
+    random_input = ["a", "b", "c", "d", "e", "f", "g", "i"]
+    for character in random_input:
+        print(character + vowel(character))
+    

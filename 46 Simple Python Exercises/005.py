@@ -16,4 +16,4 @@ def translate(user_input):
     return "".join(new_input)
 
 if __name__ == '__main__':
-    print(translate(input(msg1)))
+    print("Robber's language from \"this is fun\" is: " + translate("this is fun"))
