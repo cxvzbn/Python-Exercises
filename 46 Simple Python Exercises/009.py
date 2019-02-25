@@ -1,9 +1,7 @@
-# Write a function is_member()that takes a value (i.e. a number, string, etc) xand a list of values a, and
-# returns Trueif xis a member of a, Falseotherwise. (Note that this is exactly what the inoperator does,
-# but for the sake of the exercise you should pretend Python did not have this operator.)
-
-msg1 = "Please enter a value to check if it's a member of a list\n"
-msg2 = "Please enter values separated by space\n"
+# Write a function is_member() that takes a value (i.e. a number, string, etc)
+# and a list of values a, and returns True if x is a member of a, False
+# otherwise. (Note that this is exactly what the inoperator does, but for the
+# sake of the exercise you should pretend Python did not have this operator).
 
 
 def is_member(value, list_of_values):
@@ -12,5 +10,11 @@ def is_member(value, list_of_values):
             return True
     return False
 
+
 if __name__ == '__main__':
-    print(is_member(input(msg1), input(msg2).split()))
+    msg = (
+        "Checks if 'a' and 'f' are members of 'abcd'\n"
+        "'a' is: {}\n"
+        "'f' is: {}"
+        .format(is_member("a", "abcd"), is_member("f", "abcd")))
+    print(msg)

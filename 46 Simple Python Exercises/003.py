@@ -1,6 +1,6 @@
-# Define a function that computes the length of a given list or string. (It is true that Python has the len()
-# function built in, but writing it yourself is nevertheless a good exercise.)
-
+# Define a function that computes the length of a given list or string.
+# (It is true that Python has the len() function built in, but writing it
+# yourself is nevertheless a good exercise.)
 
 
 def length(user_input):
@@ -8,7 +8,9 @@ def length(user_input):
     for x in user_input:
         if x != " ":
             i += 1
-    print("Lenght of \"" + user_input + "\" is: " + str(i))
+    return i
+
 
 if __name__ == '__main__':
-    length("eleven")
+    msg = "Lenght of \"eleven\" is: {}".format(length("eleven"))
+    print(msg)

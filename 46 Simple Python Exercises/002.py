@@ -1,7 +1,5 @@
-# Define a function max_of_three()that takes three numbers as arguments and returns the largest of
-# them
-
-msg = "Highest number from input\nInput: 1 3 4 6 2"
+# Define a function max_of_three()that takes three numbers as arguments
+# and returns the largest of them
 
 
 def max_of_any(numbers):
@@ -11,5 +9,9 @@ def max_of_any(numbers):
 
 
 if __name__ == '__main__':
+    msg = (
+        "Highest number from input\n"
+        "Input: 1 3 4 6 2\n"
+        "Output: {}".format(max_of_any("1 3 4 6 2"))
+    )
     print(msg)
-    print("Output: " + str(max_of_any("1 3 4 6 2")))

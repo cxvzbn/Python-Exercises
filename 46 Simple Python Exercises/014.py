@@ -1,7 +1,5 @@
-# Write a program that maps a list of words into a list of integers representing the lengths of the correponding
-# words.
-
-msg = "Please write words separated by space to get their lenght:\n"
+# Write a program that maps a list of words into a list of integers
+# representing the lengths of the correponding words.
 
 
 def list_of_lenghts(words):
@@ -13,5 +11,13 @@ def list_of_lenghts(words):
         lenghts.append(i)
     return lenghts
 
+
 if __name__ == '__main__':
-    print(list_of_lenghts(input(msg).split()))
+    example_input = ["you", "me", "program", "python", "github", "eleven"]
+    msg = (
+        "Returns the lenght of given words:\n"
+        "{}\n"
+        "Corresponding lenghts:\n"
+        "{}".format(example_input, list_of_lenghts(example_input))
+    )
+    print(msg)
