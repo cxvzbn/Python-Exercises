@@ -1,8 +1,5 @@
-# Write a function filter_long_words()that takes a list of words and an integer nand returns the list of
-# words that are longer than n.
-
-msg1 = "Please input a list of words separated by space to get words longer than n: \n"
-msg2 = "Please input a number:\n"
+# Write a function filter_long_words() that takes a list of words and an
+# integer n and returns the list of words that are longer than n.
 
 
 def filter_long_words(words, n):
@@ -14,4 +11,13 @@ def filter_long_words(words, n):
 
 
 if __name__ == '__main__':
-    print(filter_long_words(input(msg1).split(), int(input(msg2))))
+    example_input = [6, ["you", "program", "python", "github", "discourage"]]
+    msg = (
+        "Returns words longer than n\n"
+        "Input: {}\n"
+        "Output: {}".format(
+            example_input,
+            filter_long_words(example_input[1], example_input[0])
+        )
+    )
+    print(msg)

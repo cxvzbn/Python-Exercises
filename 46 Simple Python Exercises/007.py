@@ -9,5 +9,10 @@ def reverse(text):
 
 
 if __name__ == '__main__':
-    msg = "Reverse of 'I am testing' is: {}".format(reverse("I am testing"))
+    random_input = "I am testing"
+    msg = (
+        "Returns the reverse of a string\n"
+        "Input: {}\n"
+        "Output: {}".format(random_input, reverse(random_input))
+    )
     print(msg)

@@ -1,7 +1,6 @@
-# Define a function is_palindrome()that recognizes palindromes 
+# Define a function is_palindrome()that recognizes palindromes
 # (i.e. words that look the same written backwards). For example,
 # is_palindrome("radar") should return True.
-
 
 
 def is_palindrome(word):
@@ -14,12 +13,18 @@ def is_palindrome(word):
 
 
 if __name__ == '__main__':
+    random_input = ["radar", "not a palindrome"]
     msg = (
-        "Checks if a 'radar' and 'not a palindrome' are palindromes\n"
-        "'radar' is: {}\n"
-        "'not a palindrome' is: {}".format(
-            is_palindrome("radar"),
-            is_palindrome("not a palindrome")
-            )
+        "Returns if a word is a palindrome\n"
+        "Input: {input}\n"
+        "Output: \n"
+        "{input_1} is: {output_1}\n"
+        "{input_2} is: {output_2}".format(
+            input=random_input,
+            input_1=random_input[0],
+            input_2=random_input[1],
+            output_1=is_palindrome(random_input[0]),
+            output_2=is_palindrome(random_input[1])
         )
+    )
     print(msg)

@@ -7,9 +7,6 @@
 
 # SAME AS FROM EXERCISE 2
 
-msg = "Prosze podac liczby oddzielone spacja: \n"
-
-
 def max_of_any(numbers):
     numbers.sort(reverse=True)
     return numbers[0]
@@ -19,7 +16,8 @@ if __name__ == '__main__':
     example_input = [5, 236, 7, 12, 124, 235, 1, 222]
     liczby = [int(x) for x in example_input]
     msg = (
-        "Return the largest number out of {}\n"
-        "The largest one is: {}".format(example_input, max_of_any(liczby))
+        "Returns the largest number\n"
+        "Input: {}\n"
+        "Output: {}".format(example_input, max_of_any(liczby))
     )
     print(msg)

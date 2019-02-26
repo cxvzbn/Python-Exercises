@@ -17,4 +17,18 @@ if __name__ == '__main__':
         "'a' is: {}\n"
         "'f' is: {}"
         .format(is_member("a", "abcd"), is_member("f", "abcd")))
+    random_input = ["abcd", "a", "f"]
+    msg = (
+        "Returns if a value is a member of an another value\n"
+        "Input: {input}\n"
+        "Output: \n"
+        "{input_1} is: {output_1}\n"
+        "{input_2} is: {output_2}".format(
+            input=random_input,
+            input_1=random_input[1],
+            input_2=random_input[2],
+            output_1=is_member(random_input[0], random_input[1]),
+            output_2=is_member(random_input[0], random_input[2])
+        )
+    )
     print(msg)
