@@ -21,10 +21,10 @@ def translate(english_words):
 
 
 if __name__ == "__main__":
-    input_string = "merry christmas and happy new year"
+    instance = "merry christmas and happy new year"
     msg = (
         "Returns translation using map()\n"
-        "Input: {}\n"
-        "Output: {}\n".format(input_string, translate(input_string))
+        "Instance: {}\n"
+        "Output: {}\n".format(instance, translate(instance))
     )
     print(msg)

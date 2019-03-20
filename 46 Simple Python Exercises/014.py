@@ -13,10 +13,10 @@ def list_of_lenghts(words):
 
 
 if __name__ == '__main__':
-    example_input = ["you", "me", "program", "python", "github", "eleven"]
+    instance = ["you", "me", "program", "python", "github", "eleven"]
     msg = (
         "Returns the lenght of given words:\n"
-        "Input: {}\n"
-        "Output: {}".format(example_input, list_of_lenghts(example_input))
+        "Instance: {}\n"
+        "Output: {}".format(instance, list_of_lenghts(instance))
     )
     print(msg)

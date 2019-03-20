@@ -11,9 +11,9 @@ def vowel(user_input):
             return True
     return False
 
-def vowel_output(user_input):
+def vowel_output(instance):
     output = ""
-    for character in random_input:
+    for character in instance:
         if vowel(character):
             output += "{} is a vowel\n".format(character)
         else:
@@ -22,10 +22,10 @@ def vowel_output(user_input):
 
 
 if __name__ == '__main__':
-    random_input = ["a", "b", "c", "d", "e", "f", "g", "i"]
+    instance = ["a", "b", "c", "d", "e", "f", "g", "i"]
     msg = (
         "Checks if characters are vowels or not.\n"
-        "Input: {}\n"
-        "Output:\n{}".format(random_input, vowel_output(random_input))
+        "Instance: {}\n"
+        "Output:\n{}".format(instance, vowel_output(instance))
     )
     print(msg)

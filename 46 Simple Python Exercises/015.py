@@ -20,10 +20,10 @@ def find_longest_word(words):
     return max_of_any(lenghts)
 
 if __name__ == '__main__':
-    example_input = ["you", "me", "program", "python", "github", "discourage"]
+    instance = ["you", "me", "program", "python", "github", "discourage"]
     msg = (
         "Returns the lenght of the longest word\n"
-        "Input: {}\n"
-        "Output: {}".format(example_input, find_longest_word(example_input))
+        "Instance: {}\n"
+        "Output: {}".format(instance, find_longest_word(instance))
     )
     print(msg)

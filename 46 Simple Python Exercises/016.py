@@ -11,13 +11,13 @@ def filter_long_words(words, n):
 
 
 if __name__ == '__main__':
-    example_input = [6, ["you", "program", "python", "github", "discourage"]]
+    instance = [6, ["you", "program", "python", "github", "discourage"]]
     msg = (
         "Returns words longer than n\n"
-        "Input: {}\n"
+        "Instance: {}\n"
         "Output: {}".format(
-            example_input,
-            filter_long_words(example_input[1], example_input[0])
+            instance,
+            filter_long_words(instance[1], instance[0])
         )
     )
     print(msg)

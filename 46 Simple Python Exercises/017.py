@@ -6,19 +6,6 @@
 # I'm mad!". Note that punctuation, capitalization, and spacing are usually
 # ignored.
 
-phrases = [
-    "Go hang a salami I'm a lasagna hog.",
-    "Was it a rat I saw?",
-    "Step on no pets",
-    "Sit on a potato pan, Otis",
-    "Lisa Bonet ate no basil",
-    "Satan, oscillate my metallic sonatas",
-    "I roamed under it as a tired nude Maori",
-    "Rise to vote sir",
-    "Dammit, I'm mad!",
-    "ahhah"
-]
-
 
 def find_in_list(something, list):
     if something in list:
@@ -40,9 +27,21 @@ def palindrome_recognizer(list_of_phrases):
 
 
 if __name__ == '__main__':
+    instance = [
+        "Go hang a salami I'm a lasagna hog.",
+        "Was it a rat I saw?",
+        "Step on no pets",
+        "Sit on a potato pan, Otis",
+        "Lisa Bonet ate no basil",
+        "Satan, oscillate my metallic sonatas",
+        "I roamed under it as a tired nude Maori",
+        "Rise to vote sir",
+        "Dammit, I'm mad!",
+        "ahhah"
+    ]
     msg = (
         "Returns if a sentence is a palindrome\n"
-        "Input: {}\n"
-        "Output: \n{}".format(phrases, palindrome_recognizer(phrases))
+        "Instance: {}\n"
+        "Output: \n{}".format(instance, palindrome_recognizer(instance))
     )
     print(msg)

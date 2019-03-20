@@ -19,14 +19,14 @@ def multiple_of_numbers(numbers_list):
 
 
 if __name__ == '__main__':
-    numbers = [1, 2, 3, 4]
+    instance = [1, 2, 3, 4]
     msg = (
         "Sum and multiple of {} are:\n"
         "Sum: {}\n"
         "Multiple: {}".format(
-            numbers, 
-            sum_of_numbers(numbers), 
-            multiple_of_numbers(numbers)
+            instance, 
+            sum_of_numbers(instance), 
+            multiple_of_numbers(instance)
             )
         )
     print(msg)

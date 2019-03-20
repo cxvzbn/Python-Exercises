@@ -26,12 +26,12 @@ def make_3sg_form(verb):
 
 if __name__ == "__main__":
 
-    example_input = ["try", "brush", "run", "fix"]
+    instance = ["try", "brush", "run", "fix"]
     msg = (
         "Returns its third person singular form\n"
-        "Input: {}\n"
-        "Output:".format(example_input)
+        "Instance: {}\n"
+        "Output:".format(instance)
     )
     print(msg)
-    for verb in example_input:
+    for verb in instance:
         print("'{}' - '{}'".format(verb, make_3sg_form(verb)))

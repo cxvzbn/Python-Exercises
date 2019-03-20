@@ -43,10 +43,10 @@ def caesar_cipher(sentence):
 
 
 if __name__ == "__main__":
-    example_input = "Pnrfne pvcure? V zhpu cersre Pnrfne fnynq!"
+    instance = "Pnrfne pvcure? V zhpu cersre Pnrfne fnynq!"
     msg = (
         "Returns encoding/decoding of ROT13\n"
-        "Input: {}\n"
-        "Output: {}\n".format(example_input, caesar_cipher(example_input))
+        "Instance: {}\n"
+        "Output: {}\n".format(instance, caesar_cipher(instance))
     )
     print(msg)

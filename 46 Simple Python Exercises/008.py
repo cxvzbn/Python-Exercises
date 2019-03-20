@@ -13,18 +13,18 @@ def is_palindrome(word):
 
 
 if __name__ == '__main__':
-    random_input = ["radar", "not a palindrome"]
+    instance = ["radar", "not a palindrome"]
     msg = (
         "Returns if a word is a palindrome\n"
-        "Input: {input}\n"
+        "Instance: {input}\n"
         "Output: \n"
         "{input_1} is: {output_1}\n"
         "{input_2} is: {output_2}".format(
-            input=random_input,
-            input_1=random_input[0],
-            input_2=random_input[1],
-            output_1=is_palindrome(random_input[0]),
-            output_2=is_palindrome(random_input[1])
+            input=instance,
+            input_1=instance[0],
+            input_2=instance[1],
+            output_1=is_palindrome(instance[0]),
+            output_2=is_palindrome(instance[1])
         )
     )
     print(msg)

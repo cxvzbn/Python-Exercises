@@ -12,10 +12,10 @@ def max(n, m):
 
 
 if __name__ == '__main__':
-    rand_input = [2, 7]
+    instance = [2, 7]
     msg = (
         "Returns the highest number out of two numbers\n"
-        "Input: {}\n"
-        "Output: {}".format(rand_input, max(rand_input[0], rand_input[1]))
+        "Instance: {}\n"
+        "Output: {}".format(instance, max(instance[0], instance[1]))
     )
     print(msg)

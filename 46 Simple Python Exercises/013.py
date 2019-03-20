@@ -13,11 +13,11 @@ def max_of_any(numbers):
 
 
 if __name__ == '__main__':
-    example_input = [5, 236, 7, 12, 124, 235, 1, 222]
-    liczby = [int(x) for x in example_input]
+    instance = [5, 236, 7, 12, 124, 235, 1, 222]
+    liczby = [int(x) for x in instance]
     msg = (
         "Returns the largest number\n"
-        "Input: {}\n"
-        "Output: {}".format(example_input, max_of_any(liczby))
+        "Instance: {}\n"
+        "Output: {}".format(instance, max_of_any(liczby))
     )
     print(msg)

@@ -18,10 +18,10 @@ def translate(user_input):
 
 
 if __name__ == '__main__':
-    random_input = "this is fun"
+    instance = "this is fun"
     msg = (
         "Returns the Robber's language from a string\n"
-        "Input: {}\n"
-        "Output: {}".format(random_input, translate(random_input))
+        "Instance: {}\n"
+        "Output: {}".format(instance, translate(instance))
     )
     print(msg)

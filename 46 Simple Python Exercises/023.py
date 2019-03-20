@@ -20,10 +20,10 @@ def correct(sentence):
 
 
 if __name__ == "__main__":
-    example_input = "This  is very  funny and   cool.Indeed!"
+    instance = "This  is very  funny and   cool.Indeed!"
     msg = (
         "Returns spelling correction defined in the exercise\n"
-        "Input: {}\n"
-        "Output: {}\n".format(example_input, correct(example_input))
+        "Instance: {}\n"
+        "Output: {}\n".format(instance, correct(instance))
     )
     print(msg)

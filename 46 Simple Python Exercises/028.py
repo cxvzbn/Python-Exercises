@@ -5,7 +5,7 @@ from functools import reduce
 
 if __name__ == "__main__":
 
-    words = [
+    instance = [
         "one",
         "two",
         "three",
@@ -18,7 +18,7 @@ if __name__ == "__main__":
     ]
     msg = (
         "Returns the lenght of the longest word\n"
-        "Input: {}\n"
-        "Output: {}\n".format(words, reduce(max, list(map(len, words))))
+        "Instance: {}\n"
+        "Output: {}\n".format(instance, reduce(max, list(map(len, instance))))
     )
     print(msg)

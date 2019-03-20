@@ -27,10 +27,10 @@ def translate(english_words):
 
 
 if __name__ == "__main__":
-    example_input = "merry christmas and happy new year"
+    instance = "merry christmas and happy new year"
     msg = (
         "Returns translation from swedish to english using dictionaries\n"
-        "Input: {}\n"
-        "Output: {}\n".format(example_input, translate(example_input))
+        "Instance: {}\n"
+        "Output: {}\n".format(instance, translate(instance))
     )
     print(msg)

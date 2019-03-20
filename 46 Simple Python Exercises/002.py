@@ -9,10 +9,10 @@ def max_of_any(numbers):
 
 
 if __name__ == '__main__':
-    random_input = [1, 3, 4, 6, 2]
+    instance = [1, 3, 4, 6, 2]
     msg = (
         "Returns the highest number\n"
-        "Input: {}\n"
-        "Output: {}".format(random_input, max_of_any(random_input))
+        "Instance: {}\n"
+        "Output: {}".format(instance, max_of_any(instance))
     )
     print(msg)

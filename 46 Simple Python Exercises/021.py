@@ -25,11 +25,11 @@ def char_freq(user_input):
 
 
 if __name__ == "__main__":
-    example_input = "abbabcbdbabdbdbabababcbcbab"
+    instance = "abbabcbdbabdbdbabababcbcbab"
     msg = (
         "Returns if a sentence is a panagram\n"
-        "Input: {}\n"
-        "Output:".format(example_input)
+        "Instance: {}\n"
+        "Output:".format(instance)
     )
     print(msg)
     char_freq("abbabcbdbabdbdbabababcbcbab")

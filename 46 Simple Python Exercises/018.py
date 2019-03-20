@@ -3,19 +3,6 @@
 # dog. Your task here is to write a function to check a sentence to see if it
 # is a pangram or not.
 
-phrases = [
-    "Write a program that maps a list of words",
-    "Yeah thats good",
-    "The quick brown fox jumps over the lazy dog",
-    "I like trains",
-    "We promptly judged antique ivory buckles for the next prize",
-    "Two driven jocks help fax my big quiz",
-    "Fickle jinx bog dwarves spy math quiz",
-    "Twitchtv is a fun entertaiment website",
-    "Public junk dwarves hug my quartz fox",
-    "Netflix is the best"
-]
-
 
 def panagram_checker(list_of_sentences):
     output = ""
@@ -32,10 +19,21 @@ def panagram_checker(list_of_sentences):
 
 
 if __name__ == '__main__':
+    instance = [
+        "Write a program that maps a list of words",
+        "Yeah thats good",
+        "The quick brown fox jumps over the lazy dog",
+        "I like trains",
+        "We promptly judged antique ivory buckles for the next prize",
+        "Two driven jocks help fax my big quiz",
+        "Fickle jinx bog dwarves spy math quiz",
+        "Twitchtv is a fun entertaiment website",
+        "Public junk dwarves hug my quartz fox",
+        "Netflix is the best"
+    ]
     msg = (
         "Returns if a sentence is a panagram\n"
-        "Input: {}\n"
-        "Output: \n{}".format(phrases, panagram_checker(phrases))
+        "Instance: {}\n"
+        "Output: \n{}".format(instance, panagram_checker(instance))
     )
     print(msg)
-

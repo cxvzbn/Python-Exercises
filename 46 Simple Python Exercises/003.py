@@ -12,10 +12,10 @@ def length(user_input):
 
 
 if __name__ == '__main__':
-    random_input = "eleven"
+    instance = "eleven"
     msg = (
         "Returns the lenght of a given list or string\n"
-        "Input: {}\n"
-        "Output: {}".format(random_input, length(random_input))
+        "Instance: {}\n"
+        "Output: {}".format(instance, length(instance))
     )
     print(msg)
